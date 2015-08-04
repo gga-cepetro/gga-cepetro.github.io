@@ -126,3 +126,7 @@
 .member h2 {
   font-size: 1.2em;
 }
+
+ul.publications li {
+  padding-bottom: 10px;
+}
