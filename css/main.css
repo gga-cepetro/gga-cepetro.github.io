@@ -74,23 +74,24 @@
   text-align: justify;
 }
 
+.project h3 {
+  text-align: left;
+}
+
 .project table {
   border: 1px solid #ddd;
   border-radius: 4px;
+  background-color: #efefef;
   border-collapse: initial;
   margin: 0 0 5px 15px;
+  margin-bottom: 5px;
   float: right;
 }
 
 .project table td {
-  padding: 2px;
-}
-
-.project table tr td:first-child {
-  text-align: right;
-}
-
-.project table tr td:last-child {
+  /*border: 1px solid #eee;*/
+  padding: 2px 5px;
+  vertical-align: top;
   text-align: center;
 }
 
