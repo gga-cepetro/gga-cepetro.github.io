@@ -101,3 +101,28 @@
 .done {
   color: blue;
 }
+
+.member {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #efefef;
+}
+
+.member .foto {
+  float: left;
+  margin: 5px;
+  width: 130px;
+}
+
+.member div {
+  margin-left: 140px;
+}
+
+.member h1 {
+  font-size: 1.5em;
+}
+
+.member h2 {
+  font-size: 1.2em;
+}
