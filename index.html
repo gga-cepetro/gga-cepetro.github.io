@@ -1,13 +1,155 @@
 ---
 layout: default
 ---
+<div class="container">   
 
-<div class="container">
+    
+<div class="widthCarousel">
+ <!-- Carousel>
+    ================================================== -->
+    <div id="homeCarousel" class="carousel slide carousel-home" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#homeCarousel" data-slide-to="1"></li>
+            <li data-target="#homeCarousel" data-slide-to="2"></li>
+            <li data-target="#homeCarousel" data-slide-to="3"></li>
+            <li data-target="#homeCarousel" data-slide-to="4"></li>
+            <li data-target="#homeCarousel" data-slide-to="5"></li>
+          </ol>
 
-  <div class="jumbotron">
-    <h1>Bootstrap starter template</h1>
-    <p>Use this document as a way to quickly start any new project.<br> All you
-    get is this text and a mostly barebones HTML document.</p>
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+
+              <img src="imgs/slider/WelcomeToGGA.png" alt="">
+
+            </div>
+
+            <div class="item ">
+
+              <img src="imgs/slider/GGA.png" alt="">
+
+            </div> 
+
+
+            <div class="item ">
+
+              <img src="imgs/slider/projectResearch.png" alt="">
+
+            </div> 
+
+
+            <div class="item ">
+
+              <img src="imgs/slider/projectHistory.png" alt="">
+
+            </div> 
+
+             <div class="item ">
+
+              <img src="imgs/slider/academicProduction.png" alt="">
+
+            </div> 
+
+             <div class="item ">
+
+              <img src="imgs/slider/acknowledgements.png" alt="">
+
+            </div> 
+
+
+
+
+
+
+
+          </div>
+
+          <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+    </div><!-- /.carousel -->
+</div>
+
+
+
+
+ <!--  <div class="jumbotron width100">
+   <h2>Applied Geophysics Group (GGA)</h2>
+    <p class = "ggaText">
+        Multidisciplinary group committed to R & D in Applied Geophysics
+        and High Performance Computing (HPC), with emphasis in
+        Exploration and Reservoirs Geophysics, combined with its effective
+        application in industry and/or regulatory agencies.
+    </p>
+    <h3>GGA’s multidisciplinary areas:</h3>
+    <ul class="ggaList">
+         <li>Geophysics</li>
+         <li>Applied Mathematics</li>
+         <li>Computer Science</li>
+         <li>Geology</li>
+         <li>Physics</li>
+    </ul>
+  </div> -->
+
+
+
+  <div class="col-md-6 Indexabout">
+  <img class="about-img" src="{{ "imgs/gga-semFundo.png" | prepend: site.baseurl }}">
+
+    <p>Founded in
+    2013 by Prof. Dr. Martin Tygel, the Applied Geophysics Group (GGA) is
+    characterized by the production of knowledge in Oil and Gas Geophysics and
+    Exploration Geophysics with emphasis on application to industry and / or
+    regulatory agencies. The concern of the GGA with practical applications and
+    insertion in the productive sector is consistent with the fact that the
+    Group is part of the Center for Petroleum Studies (CEPETRO).  The CEPETRO
+    is located at the University of Campinas (UNICAMP) and it is responsible
+    for conducting a great variety of research and technology development
+    projects among UNICAMP and many oil and gas companies.</p>
+
+    <p>In summary, the GGA manages to combine research expertise,
+    characteristic of its insertion at UNICAMP, and technological-business
+    excellence, characteristic of insertion in CEPETRO. The GGA’s activities
+    are developed in the Applied Geophysics Laboratory (LGA) located on
+    CEPETRO’s facilities and fully equipped in terms of human and hardware
+    resources.</p>
+
+    <p>GGA's interests are focused on signal processing of data acquired on
+    geophysical surveys aiming to construct images in complex geologies and
+    inversion of structural and lithological attributes related to exploratory
+    targets. It is led by a genuinely multi-disciplinary team, including
+    Geophysicists, Applied Mathematicians, Physicists, Geologists and Computing
+    Experts. The scope of GGA's work covers both land and marine data of
+    Brazilian basins (including exploratory frontiers and pre-salt).</p>
+
+    <p>The described objectives are  achieved with the research and development
+    of practical and innovative methods of seismic data processing with
+    emphasis on building efficient modeling algorithms, imaging, estimation and
+    inversion parameters using the latest high performance computing (HPC)
+    techniques. The research results are always analysed by actual members of
+    academia and industry, making these results a eligible product with
+    immediate application in industry production.</p>
+
+  </div>
   </div>
 
-</div><!-- /.container -->
+
+      <h2 class="h2Index">Acknowledgements</h2>
+      <div class="Acknowledgements">
+          <img src="imgs/parceiros/petrobras.png" class="imgAcknowledgements" title="Petrobras">
+          <img src="imgs/parceiros/baker.png" class="imgAcknowledgements" title="Baker Huges">
+          <img src="imgs/parceiros/wit.png" class="imgAcknowledgements" title="Wave Inversion Technology">
+      </div>
+
+
+
+</div>
