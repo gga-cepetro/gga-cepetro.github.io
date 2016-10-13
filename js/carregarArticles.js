@@ -4,7 +4,6 @@
 //     meuVetor = new Array (); 
 //     var i=0;
 //     var caminho;
-//     //var texto;
 //     $(data).find("a:contains(.txt)").each(function(){
 //           var texto = $(this).attr("href").replace(/.\w+$/,"");
 //           meuVetor[i] = texto;
@@ -16,19 +15,11 @@
 
 //       var collapse = "collapseOne"+j;
 //       var carregarAr = "carregarAr"+j;
-//       var tresPrimeiros = "checked";
+//       var articles = "articles";
 
-//         if(j > 2){
-//           tresPrimeiros ="";
-//         }
-//          document.getElementById("accordion").innerHTML += '<div><input id='+collapse+' name='+collapse+' class="accordionDesliza" type="checkbox" onclick="readTextFile(\''+ caminho + '\',\''+ carregarAr + '\')"'+tresPrimeiros+' />'
-//                     +'<label for='+collapse+' >'+meuVetor[j]+'</label>'
-//                     +'<article class="ac-small"  >'
-//                      +    '<div><ul class="publications" id='+carregarAr+'></ul></div>'
-//                     +'</article></div>';
-//          if (j < 3){
-//           readTextFile(caminho,carregarAr);         
-//         } 
+//          document.getElementById("accordion").innerHTML += '<div class='+articles+'><h1>'+meuVetor[j]+'</h1>'
+//                     +'<div id='+carregarAr+' ></div></div>';
+//              readTextFile(caminho,carregarAr); 
 //   	}
 //   }
 // });
@@ -39,20 +30,17 @@
 //     rawFile.open("GET", file, false);
 //     rawFile.onreadystatechange = function ()
 //     {
-
 //         if(rawFile.readyState === 4)
 //         {
 //             if(rawFile.status === 200 || rawFile.status == 0)
 //             {
 //                 var allText = rawFile.responseText;
 //                 var linhas = allText.split('|');
-//                 document.getElementById(id).innerHTML=""; 
 //                 for (i = 2; i < linhas.length-1; i++) {
-//                    document.getElementById(id).innerHTML += '<li>'+ linhas[i] + '</li>';
+//                    document.getElementById(id).innerHTML +=  linhas[i] + '</br></br>'  ;
 //                 }
 //             }
 //         }
 //     }
 //     rawFile.send(null);
 // }
-

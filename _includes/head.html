@@ -2,25 +2,24 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="imgs/ggaIcon.ico" type="image/x-icon" />
+  <link rel="icon" href="imgs/hpgIcone.ico" type="image/x-icon" />
   <!-- The above 3 meta tags *must* come first in the head;
   any other head content must come *after* these tags -->
   <title>Applied Geophysics Group</title>
 
 
-  <!-- Font awesome Css -->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font awesome Css -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 
   <!-- Main stylesheet -->
   <link href="css/main.css" rel="stylesheet">
   <link href="css/estilo.css" rel="stylesheet">
-  <link href="css/ninja-slider.css" rel="stylesheet" type="text/css" />
 
-  <!--Carousel -->
-  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/pagination.css" />
+  <link rel="stylesheet" href="css/news.css" />
 
 
 
@@ -31,13 +30,38 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
    <!--script src="https://code.jquery.com/jquery-1.10.2.js"></script-->
   <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script-->
-  <script src="js/ninja-slider.js" type="text/javascript"></script>
-  <script  type='text/javascript' src="js/smoothscroll.js"></script>
-  <script  type='text/javascript' src="js/menuOpaco.js"></script>
-  <script  type='text/javascript' src="js/carregarArticles.js"></script>
-  <script  type='text/javascript' src="js/carregarExpanded.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type='text/javascript' src="js/smoothscroll.js"></script>
+  <script type='text/javascript' src="js/menuOpaco.js"></script>
+  <script type='text/javascript' src="js/carregarArticles.js"></script>
+  <script type='text/javascript' src="js/carregarExpanded.js"></script>
+  <script type="text/javascript" src="js/jquery.pagination.js"></script>
+  <script type="text/javascript" src="js/news.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+// <script>
+// function myMap() {
+//   var mapCanvas = document.getElementById("map");
+//   var mapOptions = {
+//     center: new google.maps.LatLng(-22.8169173,-47.0697648),
+//     zoom: 16
+//   };
+// var map = new google.maps.Map(mapCanvas, mapOptions);
+// }
+// </script>
 
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(-22.813102, -47.067478);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 16};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+ 
 </head>

@@ -79,7 +79,7 @@
 }
 
 .grande{
-  min-height: 422px;
+  min-height: 441px;
 }
 
 .pequeno{
@@ -150,7 +150,6 @@ ul.publications li {
 
     .project {
       width: 100%;
-      float: none;
     }
     .grande{
       min-height: auto;

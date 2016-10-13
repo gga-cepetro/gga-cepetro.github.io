@@ -7,8 +7,6 @@
 	border-radius: 13px;
 }
 
-
-
 .project p, .project ul li{
 	font-size: 14px;
 	text-align: inherit;
@@ -29,7 +27,7 @@
  }
 
  .containerStaff h1 ,.h1, h1{
-    color: #317392;
+    color: #326270;
     font-size: 25px;
  }
 
@@ -63,6 +61,90 @@
 	-moz-transition: all 2s linear;
 	-o-transition: all 2s linear;	
 }
+
+/*>>>> Search Menu <<<<<<<*/
+
+.input-class{
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	
+}
+
+.input-class {
+  padding: 4px;
+  width: 225px;
+  border: 1px solid #317392;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  display: block;
+}
+ 
+.input-class:focus {
+  box-shadow: 0 0 4px #317392;
+  border-radius: 3px;
+  width: 265px;
+  border-color: #317392;
+}
+ 
+.input-class::-webkit-input-placeholder { /* Chrome, Safari, Opera */
+  color: #317392;
+  font-style: italic;
+   opacity: 1;
+}
+ 
+.input-class:-moz-placeholder { /* Firefox 18- */
+  color: #317392;
+  font-style: italic;
+  opacity: 1;
+}
+ 
+.input-class::-moz-placeholder {  /* Firefox 19+ */
+  color: #317392;
+  font-style: italic;
+  opacity: 1;
+}
+ 
+.input-class:-ms-input-placeholder { /* IE10+ */ 
+  color: #317392;
+  font-style: italic; 
+}
+
+/*#divBusca{
+    background-color:#E0EEEE;
+    border:solid 2px #5F9EA0;
+    border-radius:10px;
+    width:300px;
+    height:32px;
+}
+ 
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;  
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;
+}
+ 
+#btnBusca{
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background:#5F9EA0;
+}
+ 
+#divBusca img{
+    float:left;
+}*/
+
+
+
 
 /*>>>>>>>>>>>>>>>>>> Fim Padroes <<<<<<<<<<<<<<<<<< */
 
@@ -137,10 +219,13 @@
 }
 /* >>>>>>>>>>>>>>>>> Index <<<<<<<<<<<<<<<<<*/
 
+	.indexGeral{
+		width: 100%;
+	}
 
 	.Indexabout{
 		padding-top: 10px;
-		width: 100%;
+		width: 65%;
 		margin-bottom: 30px;
 		margin-top: 20px;
 	}
@@ -176,7 +261,7 @@
     }
 
 	h3 , h2{
-		color: #326270;
+		color:  #317392;
 		font-weight: bold;
 	}
 
@@ -191,12 +276,18 @@
 /*	.ggaList li , .jumbotron  p {
 		color: #333;
 		font-size: 1.22em;
+
 		text-align: justify;
 	}*/
 
 	.Acknowledgements{
 		/*display: table;*/
+	
 		text-align: center;	
+	}
+
+	.geralAcknowledgements{
+		clear: both;
 	}
 
 	.indexAcknowledgements{
@@ -761,12 +852,25 @@ border-color: #101010;
 
 	.geral{
 		min-height: 500px;
-		padding-left: 15px;
-		padding-right: 15px;
+	}
+
+	/*>>>>>>>>>>>>>> FIM <<<<<<<<<<<<<<<<<<<<*/
+
+	.jumbotron{
+		padding-right: 8px;
+		padding-left: 8px;
+	}
+
+	.seta {
+		position:fixed; 
+		display:none; 
+		right:40px; 
+		top:88%;  
+		z-index:999;
 	}
 
 
-	/*>>>>>>>>>>>>>> FIM <<<<<<<<<<<<<<<<<<<<*/
+
 
 
 @media (max-width: 1199px){
@@ -805,10 +909,9 @@ border-color: #101010;
 		float: none; 
 	
 	}
-	.widthCarousel{
-		float: none;
+
+	.Indexabout{
 		width: 100%;
-		padding: 0 0 20px 0;
 	}
 	
 	.jumbotron{
@@ -823,9 +926,14 @@ border-color: #101010;
 		width: 100%;
 	}
 
+	.input-class {
+    	margin-right: 0;
+ 	}
+	
+
 }
 
-@media (max-width:768px){
+@media (max-width:767px){
 
 	.menu { 
 		width:0%;
@@ -844,18 +952,10 @@ border-color: #101010;
 		height: 310px;
 	}
 
-}
-
-.jumbotron{
-	padding-right: 8px;
-	padding-left: 8px;
+	.input-class {
+    	float: none;
+ 	}
 
 }
 
-.seta {
-	position:fixed; 
-	display:none; 
-	right:40px; 
-	top:88%;  
-	z-index:999;
-}
+
